@@ -134,21 +134,13 @@ console.log(esempio);
 */
 
 const giveMeRandom = function (n) {
-  let arrayCasuale = []; // 1. Contenitore vuoto
+  let arrayCasuale = [];
 
   for (let i = 0; i < n; i++) {
-    // 2. Genera numero tra 0 e 10
-    // Usiamo Math.floor() per includere lo 0, oppure Math.ceil() se vuoi da 1 a 10
     let numero = Math.floor(Math.random() * 11);
 
-    // 3. Aggiungi il numero all'array
     arrayCasuale.push(numero);
   }
 
-  return arrayCasuale; // 4. Restituisci l'array completo
+  return arrayCasuale;
 };
-
-const risultato = giveMeRandom(5);
-console.log(risultato); // Esempio: [3, 0, 10, 5, 2]
-
-/* SCRIVI QUI LA TUA RISPOSTA */
